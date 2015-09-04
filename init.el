@@ -36,3 +36,6 @@
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
+;; undo-tree
+(require 'undo-tree)
+(global-undo-tree-mode)
