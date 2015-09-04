@@ -25,3 +25,6 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
+;; helm
+(global-set-key (kbd "M-x") 'helm-M-x)
+(helm-mode 1)
