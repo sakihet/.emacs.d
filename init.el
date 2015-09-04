@@ -39,3 +39,6 @@
 ;; undo-tree
 (require 'undo-tree)
 (global-undo-tree-mode)
+;; popwin
+(require 'popwin)
+(popwin-mode 1)
