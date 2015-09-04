@@ -28,3 +28,5 @@
 ;; helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 (helm-mode 1)
+;; yasnippet
+(yas-global-mode 1)
