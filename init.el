@@ -61,3 +61,7 @@
 ;; popwin
 (require 'popwin)
 (popwin-mode 1)
+
+;; ruby-mode
+(custom-set-variables
+ '(ruby-insert-encoding-magic-comment nil))
