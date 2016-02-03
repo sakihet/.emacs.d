@@ -25,6 +25,25 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
+
+;;; automatic package install
+(setq my-el-get-packages
+      (append
+       '(helm
+         auto-complete
+         emmet-mode
+         markdown-mode
+         popwin
+         direx
+         undo-tree
+         web-mode
+         magit
+         guide-key
+         yaml-mode
+         yasnippet
+         )))
+(el-get 'sync my-el-get-packages)
+
 ;; helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 (helm-mode 1)
