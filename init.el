@@ -41,9 +41,12 @@
          guide-key
          yaml-mode
          yasnippet
+         tomorrow-theme
          )))
 (el-get 'sync my-el-get-packages)
 
+;; theme
+(load-theme 'tomorrow-day t)
 ;; helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 (helm-mode 1)
