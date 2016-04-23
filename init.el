@@ -30,6 +30,7 @@
 (setq my-el-get-packages
       (append
        '(helm
+         helm-ls-git
          auto-complete
          emmet-mode
          markdown-mode
@@ -53,6 +54,7 @@
 (global-set-key (kbd "C-x C-r") 'helm-recentf)
 (global-set-key (kbd "C-x C-o") 'helm-occur)
 (helm-mode 1)
+(require 'helm-ls-git)
 ;; yasnippet
 (yas-global-mode 1)
 ;; emmet-mode
