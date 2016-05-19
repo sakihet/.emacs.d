@@ -13,6 +13,9 @@
 (delete-selection-mode t)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (electric-pair-mode 1)
+;; tramp
+(require 'tramp)
+(setq tramp-default-method "ssh")
 ;; el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
