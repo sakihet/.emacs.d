@@ -34,7 +34,7 @@
       (append
        '(helm
          helm-ls-git
-         auto-complete
+         company-mode
          emmet-mode
          markdown-mode
          popwin
@@ -51,6 +51,12 @@
 
 ;; theme
 (load-theme 'tomorrow-day t)
+;; company-mode
+(global-company-mode)
+(define-key company-active-map (kbd "M-n") nil)
+(define-key company-active-map (kbd "M-p") nil)
+(define-key company-active-map (kbd "C-n") 'company-select-next)
+(define-key company-active-map (kbd "C-p") 'company-select-previous)
 ;; helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
