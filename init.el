@@ -15,6 +15,7 @@
 (delete-selection-mode t)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (electric-pair-mode 1)
+(setq scroll-preserve-screen-position t)
 
 ;; window move
 (global-set-key (kbd "M-o") 'other-window)
