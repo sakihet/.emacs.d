@@ -39,20 +39,21 @@
 ;;; automatic package install
 (setq my-el-get-packages
       (append
-       '(helm
-         helm-ls-git
+       '(
          company-mode
+         direx
          emmet-mode
+         guide-key
+         helm
+         helm-ls-git
+         magit
          markdown-mode
          popwin
-         direx
+         tomorrow-theme
          undo-tree
          web-mode
-         magit
-         guide-key
          yaml-mode
          yasnippet
-         tomorrow-theme
          )))
 (el-get 'sync my-el-get-packages)
 
