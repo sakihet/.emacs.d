@@ -45,6 +45,7 @@
          emmet-mode
          guide-key
          helm
+         helm-ag
          helm-ls-git
          magit
          markdown-mode
