@@ -99,3 +99,6 @@
 ;; ruby-mode
 (custom-set-variables
  '(ruby-insert-encoding-magic-comment nil))
+
+;; web-mode
+(add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
