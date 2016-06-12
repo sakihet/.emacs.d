@@ -48,7 +48,6 @@
          helm
          helm-ag
          helm-ls-git
-         magit
          markdown-mode
          popwin
          tomorrow-theme
