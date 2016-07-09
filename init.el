@@ -44,6 +44,7 @@
          company-mode
          direx
          emmet-mode
+         go-mode
          guide-key
          helm
          helm-ag
