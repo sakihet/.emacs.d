@@ -51,6 +51,7 @@
          helm-ls-git
          markdown-mode
          popwin
+         slim-mode
          tomorrow-theme
          undo-tree
          web-mode
