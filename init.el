@@ -103,3 +103,7 @@
 
 ;; web-mode
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
+
+;; go-mode
+(add-hook 'go-mode-hook (lambda()
+                          (setq tab-width 4)))
