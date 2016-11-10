@@ -52,6 +52,7 @@
          helm-ls-git
          markdown-mode
          popwin
+         scala-mode
          slim-mode
          tomorrow-theme
          undo-tree
