@@ -107,3 +107,6 @@
 ;; go-mode
 (add-hook 'go-mode-hook (lambda()
                           (setq tab-width 4)))
+
+;; javascript
+(setq js-indent-level 2)
