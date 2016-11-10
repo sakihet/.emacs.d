@@ -44,6 +44,7 @@
          company-mode
          direx
          emmet-mode
+         flycheck
          go-mode
          guide-key
          helm
@@ -110,3 +111,6 @@
 
 ;; javascript
 (setq js-indent-level 2)
+
+;; flycheck
+(global-flycheck-mode)
