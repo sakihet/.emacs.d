@@ -42,6 +42,7 @@
       (append
        '(
          company-mode
+         company-tern
          direx
          emmet-mode
          flycheck
@@ -112,6 +113,10 @@
 
 ;; javascript
 (setq js-indent-level 2)
+
+(setq company-tern-property-marker "")
+(add-hook 'js-mode-hook 'tern-mode)
+(add-to-list 'company-backends 'company-tern)
 
 ;; flycheck
 (global-flycheck-mode)
