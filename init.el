@@ -11,7 +11,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(company queue rust-mode vertico))
+ '(package-selected-packages '(company markdown-mode queue rust-mode vertico yaml-mode))
  '(show-trailing-whitespace t))
 
 (custom-set-faces
@@ -62,6 +62,17 @@
   (setq company-idle-delay 0
 	company-minimum-prefix-length 1))
 
+;; markdown-mode
+(use-package markdown-mode
+  :ensure t
+  :mode ("\\.md\\'" . gfm-mode)
+  )
+
+;; savehist
+(use-package savehist
+  :init
+  (savehist-mode))
+
 ;; vertico
 (use-package vertico
   :custom
@@ -69,10 +80,11 @@
   :init
   (vertico-mode))
 
-;; savehist
-(use-package savehist
-  :init
-  (savehist-mode))
+;; yaml-mode
+(use-package yaml-mode
+  :ensure t
+  :mode ("\\.yml\\'" "\\.yaml\\'")
+  )
 
 ;; web-mode
 (use-package web-mode
