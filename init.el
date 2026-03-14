@@ -34,6 +34,7 @@
 (global-display-line-numbers-mode t)
 (column-number-mode t)
 (global-hl-line-mode t)
+(setq-default display-line-numbers-width 3)
 
 ;; ui
 (delete-selection-mode t)
@@ -41,6 +42,7 @@
 (setq scroll-preserve-screen-position t)
 (setq scroll-conservatively 1)
 (setq scroll-margin 5)
+(global-auto-revert-mode)
 
 ;; my function
 (defun reload-init-el ()
